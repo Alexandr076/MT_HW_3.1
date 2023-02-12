@@ -95,6 +95,8 @@ public class Main {
         });
         executor.execute(increasingLetterThread);
 
+        executor.shutdown();
+
         System.out.println("Красивых слов с длиной 3: " + beautifulString_3 + " шт");
         System.out.println("Красивых слов с длиной 4: " + beautifulString_4 + " шт");
         System.out.println("Красивых слов с длиной 5: " + beautifulString_5 + " шт");
